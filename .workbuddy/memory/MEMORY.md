@@ -4,11 +4,16 @@
 
 | 路径 | 说明 |
 |---|---|
-| `D:\NewFolder\hello-agents-main` | 工作区根 |
-| `Hello-Agents\` | **真正的 git 仓库**（git clone 而来，859 commits，HEAD `4f7682c`） |
-| `hello-agents-main\` | 旧的 ZIP 快照，无 `.git`，保留备用 |
-| `.workbuddy\memory\` | 本项目记忆目录 |
+| `D:\NewFolder\hello-agents-main` | **学习仓库根**（2026-09-15 `git init -b main`，首次提交 `6725ed4`） |
+| `notes\` | 学习笔记（01 环境排障 / 02 第1章知识 / 03 第1章代码逐项） |
+| `README.md` | 学习总览 + 进度清单 + 复现命令 |
+| `Hello-Agents\` | **教程本体**，独立 git 仓库（git clone 而来，859 commits，HEAD `4f7682c`），**学习仓库不跟踪它** |
+| `hello-agents-main\` | 旧的 ZIP 快照，无 `.git`，保留备用，不跟踪 |
+| `.workbuddy\memory\` | 本项目记忆目录（已纳入学习仓库跟踪） |
 | `check_api.py` | 连通性自检脚本（天气 / LLM / Tavily） |
+
+学习仓库的 `.gitignore` 排除：`/Hello-Agents/`、`/hello-agents-main/`、`.venv/`、`.env`、`.idea/`、`_*`、`*.log`。
+远端**尚未配置**（`gh` 未登录，没推到任何 GitHub 仓库）。
 
 ## 环境约定（2026-09-15 建立）
 
