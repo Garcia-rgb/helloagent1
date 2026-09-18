@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tech-search",
+  "version": "1.0.0",
+  "description": "按关键词检索 GitHub 仓库与 arXiv 论文：给出「AI」「大模型」这类词，返回最近更新的开源项目和最新论文，含标题、链接、星标数、作者与摘要。对应教程第 5 章 Coze 案例里的 GitHub / arXiv 两个信息源插件。",
+  "author": {
+    "name": "Zhou Wei"
+  },
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "arxiv",
+    "search",
+    "papers",
+    "repositories",
+    "检索",
+    "论文",
+    "开源项目"
+  ]
+}

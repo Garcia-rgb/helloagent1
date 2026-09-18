@@ -1,0 +1,284 @@
+﻿tech-search 插件包 · 验收记录（2026-09-17）
+==============================================================
+
+一、接口可达性探测
+
+[OK]   GitHub search/repositories
+       HTTP 200  19182 bytes  content-type=application/json; charset=utf-8
+       {   "total_count": 6569613,   "incomplete_results": false,   "items": [     {       "id": 1374053920,       "node_id": "R_kgDOUeZmIA",       "name": "AI-Training-Week1",       "ful
+
+[OK]   GitHub releases.atom
+       HTTP 200  311950 bytes  content-type=application/atom+xml; charset=utf-8
+       <?xml version="1.0" encoding="UTF-8"?> <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">   <id>tag:github.com,2008:https://git
+
+[OK]   arXiv api/query
+       HTTP 200  9732 bytes  content-type=application/atom+xml; charset=utf-8
+       <?xml version='1.0' encoding='UTF-8'?> <feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom"
+
+
+二、打包与结构验收（含从解压副本里实跑）
+
+一、打包内容
+
+    plugin.json                                        624 B
+    skills/tech-search/SKILL.md                       5787 B
+    skills/tech-search/references/queries.md          2869 B
+    skills/tech-search/scripts/search_sources.py     11624 B
+
+二、两个 zip
+
+    tech-search.zip                                            10024 B
+    tech-search-nested.zip                                     10120 B
+
+--- tech-search.zip（扁平） ---
+    plugin.json
+    skills/tech-search/SKILL.md
+    skills/tech-search/references/queries.md
+    skills/tech-search/scripts/search_sources.py
+
+    plugin.json -> name=tech-search version=1.0.0
+
+    [OK] 结构完整
+
+--- tech-search-nested.zip（套一层） ---
+    tech-search/plugin.json
+    tech-search/skills/tech-search/SKILL.md
+    tech-search/skills/tech-search/references/queries.md
+    tech-search/skills/tech-search/scripts/search_sources.py
+
+    plugin.json -> name=tech-search version=1.0.0
+
+    [OK] 结构完整
+
+三、从解压出的副本里实跑
+
+    脚本来自: C:\Users\14374\AppData\Local\Temp\ts_verify_eok08x7a\skills\tech-search\scripts\search_sources.py
+
+    [exit 0] GitHub 检索
+        === GitHub 仓库检索「AI stars:>500」· 按最近更新 · 3 条（全站命中 6421） ===
+        
+        [1] modular/modular
+            The Modular Platform (includes MAX & Mojo)
+            https://github.com/modular/modular
+            29787 stars  ·  3173 forks  ·  Mojo  ·  最近推送 2026-09-17 14:57
+        
+        [2] dust-tt/dust
+            Custom AI agent platform to speed up your work.
+            https://github.com/dust-tt/dust
+            1466 stars  ·  350 forks  ·  TypeScript  ·  最近推送 2026-09-17 14:57
+        
+        [3] larksuite/cli
+            The official Lark/飞书 CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.
+            https://github.com/larksuite/cli
+            17244 stars  ·  1387 forks  ·  Go  ·  最近推送 2026-09-17 14:56
+        
+        成功 1 / 共 1 个源
+
+    [exit 0] arXiv 检索
+        === arXiv 论文检索「cat:cs.AI」· 按提交时间倒序 · 3 条 ===
+        
+        [1] Objective vs. Search: Decomposing What Makes a Good Tokeniser
+            http://arxiv.org/abs/2609.19145v1
+            cs.CL  ·  提交 2026-09-17 01:59
+            作者：Ahmetcan Yavuz, Clara Meister, Tiago Pimentel
+            摘要：Two dominant tokenisation algorithms are used by modern language models: byte-pair encoding (BPE) and UnigramLM. These differ along two orthogonal axes: their optimisation objective (compression vs. log-likelihood) and their search procedure (bottom-up merging vs. top-down pruning). Existing compari
+        
+        [2] A Zeroth-Order Paradigm for LLM Preference Alignment
+            http://arxiv.org/abs/2609.19144v1
+            cs.CL  ·  提交 2026-09-17 01:59
+            作者：Peter Chen, Xi Chen, Wotao Yin 等 4 人
+            摘要：Direct preference alignment methods are widely used to align large language models (LLMs) with human preferences because of their computational and memory efficiency. However, likelihood displacement motivates alternative ways to extract information from preference pairs with small likelihood margin
+        
+        [3] Dreaming the Sound of Contact: Leveraging Video and Audio Generation for Zero-Shot Force-Aware Manipulation and Data Generation
+            http://arxiv.org/abs/2609.19137v1
+            cs.RO  ·  提交 2026-09-17 01:56
+            作者：Guanhua Ji, Tianyu Li, Dayoon Suh 等 6 人
+            摘要：Recent advances in video generation allow robots to learn manipulation trajectories from generated videos. However, these approaches produce purely kinematic trajectories that lack force information, causing failures in contact-rich tasks where appropriate contact forces are essential for success. I
+        
+        成功 1 / 共 1 个源
+
+    [exit 2] 非法 sort（应退出码 2）
+        GitHub 的 --sort 只能填 best-match|stars|forks|updated，收到的是 'nope'
+
+============================================================
+结论：结构验收通过，功能实跑见上面各段
+
+三、脚本功能测试：三种模式 / 三种排序 / both
+
+=== GitHub 仓库检索「AI」· 按最近更新 · 3 条（全站命中 6569637） ===
+
+[1] webwerkwien/contao-ai-cli
+    AI-assisted Contao 5 management via SSH — contao-ai-cli
+    https://github.com/webwerkwien/contao-ai-cli
+    0 stars  ·  0 forks  ·  Python  ·  最近推送 2026-09-17 14:55
+
+[2] Lilith3777/rei-ai-updates
+    https://github.com/Lilith3777/rei-ai-updates
+    0 stars  ·  0 forks  ·  最近推送 2026-09-17 14:55
+
+[3] Toluwerr/Simply
+    Simply - a tiny self-improving AI model (RSI loop: train, self-evaluate, self-write data, keep the best version)
+    https://github.com/Toluwerr/Simply
+    0 stars  ·  0 forks  ·  Python  ·  最近推送 2026-09-17 14:55
+
+成功 1 / 共 1 个源
+
+===== arxiv =====
+
+=== arXiv 论文检索「cat:cs.AI」· 按提交时间倒序 · 3 条 ===
+
+[1] Objective vs. Search: Decomposing What Makes a Good Tokeniser
+    http://arxiv.org/abs/2609.19145v1
+    cs.CL  ·  提交 2026-09-17 01:59
+    作者：Ahmetcan Yavuz, Clara Meister, Tiago Pimentel
+    摘要：Two dominant tokenisation algorithms are used by modern language models: byte-pair encoding (BPE) and UnigramLM. These differ along two orthogonal axes: their optimisation objective (compression vs. log-likelihood) and their search procedure (bottom-up merging vs. top-down pruning). Existing compari
+
+[2] A Zeroth-Order Paradigm for LLM Preference Alignment
+    http://arxiv.org/abs/2609.19144v1
+    cs.CL  ·  提交 2026-09-17 01:59
+    作者：Peter Chen, Xi Chen, Wotao Yin 等 4 人
+    摘要：Direct preference alignment methods are widely used to align large language models (LLMs) with human preferences because of their computational and memory efficiency. However, likelihood displacement motivates alternative ways to extract information from preference pairs with small likelihood margin
+
+[3] Dreaming the Sound of Contact: Leveraging Video and Audio Generation for Zero-Shot Force-Aware Manipulation and Data Generation
+    http://arxiv.org/abs/2609.19137v1
+    cs.RO  ·  提交 2026-09-17 01:56
+    作者：Guanhua Ji, Tianyu Li, Dayoon Suh 等 6 人
+    摘要：Recent advances in video generation allow robots to learn manipulation trajectories from generated videos. However, these approaches produce purely kinematic trajectories that lack force information, causing failures in contact-rich tasks where appropriate contact forces are essential for success. I
+
+成功 1 / 共 1 个源
+
+===== both =====
+
+=== GitHub 仓库检索「AI」· 按最近更新 · 3 条（全站命中 6569637） ===
+
+[1] webwerkwien/contao-ai-cli
+    AI-assisted Contao 5 management via SSH — contao-ai-cli
+    https://github.com/webwerkwien/contao-ai-cli
+    0 stars  ·  0 forks  ·  Python  ·  最近推送 2026-09-17 14:55
+
+[2] Lilith3777/rei-ai-updates
+    https://github.com/Lilith3777/rei-ai-updates
+    0 stars  ·  0 forks  ·  最近推送 2026-09-17 14:55
+
+[3] Toluwerr/Simply
+    Simply - a tiny self-improving AI model (RSI loop: train, self-evaluate, self-write data, keep the best version)
+    https://github.com/Toluwerr/Simply
+    0 stars  ·  0 forks  ·  Python  ·  最近推送 2026-09-17 14:55
+
+=== arXiv 论文检索「AI」· 按提交时间倒序 · 3 条 ===
+
+[1] AgentLSD: Evaluating AI Security Agents Under Adversarial Task Contamination
+    http://arxiv.org/abs/2609.19140v1
+    cs.CR  ·  提交 2026-09-17 01:58
+    作者：Matteo Golinelli, Idilio Drago, Matteo Boffa 等 5 人
+    摘要：AI agents for security inspect web pages, source code, logs, configuration files, and command outputs. These environments may contain deceptive artifacts that influence the agent's behavior. We call this adversarial task contamination. Whereas prompt injection relies on attacker-supplied instruction
+
+[2] In-Context Robot Learning with VLM Agents
+    http://arxiv.org/abs/2609.19138v1
+    cs.CV  ·  提交 2026-09-17 01:58
+    作者：Dongzhou Cheng, Taoran Yi, Ye Fang 等 15 人
+    摘要：Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such
+
+[3] Flag Game: A Toy Model for Mechanistic Swarm Interpretability
+    http://arxiv.org/abs/2609.19124v1
+    cs.AI  ·  提交 2026-09-17 01:46
+    作者：Elizabeth Pavlova, Hidenori Tanaka
+    摘要：Emergent coordinated behaviors of AI agents are starting to present critical safety risks. A key phenomenon driving these behaviors is the rapid formation and spread of beliefs about the world, and mechanistic understanding is crucial for collective alignment. To this end, we introduce the Flag Game
+
+成功 2 / 共 2 个源
+
+四、补充测试：星标门槛 / 星标排序 / JSON 输出 / 错误处理
+
+=== GitHub 仓库检索「AI stars:>500」· 按最近更新 · 3 条（全站命中 6421） ===
+
+[1] Mesh-LLM/mesh-llm
+    Distributed AI/LLM for the people. Share compute privately or publicly to power your agents and chat.
+    https://github.com/Mesh-LLM/mesh-llm
+    3414 stars  ·  413 forks  ·  Rust  ·  最近推送 2026-09-17 14:56
+
+[2] modular/modular
+    The Modular Platform (includes MAX & Mojo)
+    https://github.com/modular/modular
+    29787 stars  ·  3173 forks  ·  Mojo  ·  最近推送 2026-09-17 14:56
+
+[3] microsoft/agent-lightning
+    The absolute trainer to light up AI agents.
+    https://github.com/microsoft/agent-lightning
+    18239 stars  ·  1608 forks  ·  Python  ·  最近推送 2026-09-17 14:56
+
+成功 1 / 共 1 个源
+
+===== github 按星标排序 =====
+
+=== GitHub 仓库检索「topic:llm」· 按星标最多 · 3 条（全站命中 133168） ===
+
+[1] affaan-m/ECC
+    The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+    https://github.com/affaan-m/ECC
+    260564 stars  ·  39000 forks  ·  JavaScript  ·  最近推送 2026-09-17 12:37
+
+[2] NousResearch/hermes-agent
+    The agent that grows with you
+    https://github.com/NousResearch/hermes-agent
+    246293 stars  ·  51512 forks  ·  Python  ·  最近推送 2026-09-17 14:48
+
+[3] Significant-Gravitas/AutoGPT
+    AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
+    https://github.com/Significant-Gravitas/AutoGPT
+    187399 stars  ·  46013 forks  ·  Python  ·  最近推送 2026-09-17 14:48
+
+成功 1 / 共 1 个源
+
+===== arxiv --json =====
+
+{
+  "query": "cat:cs.AI",
+  "sort": "submittedDate",
+  "count": 2,
+  "items": [
+    {
+      "title": "Objective vs. Search: Decomposing What Makes a Good Tokeniser",
+      "url": "http://arxiv.org/abs/2609.19145v1",
+      "published": "2026-09-17 01:59",
+      "updated": "2026-09-17 01:59",
+      "authors": "Ahmetcan Yavuz, Clara Meister, Tiago Pimentel",
+      "category": "cs.CL",
+      "summary": "Two dominant tokenisation algorithms are used by modern language models: byte-pair encoding (BPE) and UnigramLM. These differ along two orthogonal axes: their optimisation objective (compression vs. log-likelihood) and their search procedure (bottom-up merging vs. top-down pruning). Existing compari"
+    },
+    {
+      "title": "A Zeroth-Order Paradigm for LLM Preference Alignment",
+      "url": "http://arxiv.org/abs/2609.19144v1",
+      "published": "2026-09-17 01:59",
+      "updated": "2026-09-17 01:59",
+      "authors": "Peter Chen, Xi Chen, Wotao Yin 等 4 人",
+      "category": "cs.CL",
+      "summary": "Direct preference alignment methods are widely used to align large language models (LLMs) with human preferences because of their computational and memory efficiency. However, likelihood displacement motivates alternative ways to extract information from preference pairs with small likelihood margin"
+    }
+  ],
+  "message": "ok"
+}
+
+===== 非法 sort 值 =====
+
+python.exe : GitHub 的 --sort 只能填 best-match|stars|forks|updated，收到的是 'nope'
+所在位置 行:463 字符: 1
++ & $py $s github --query AI --sort nope 2>&1 | Out-File -Append -Encod ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (GitHub 的 --sort...ted，收到的是 'nope':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+exit=2
+
+===== 无参数 =====
+
+python.exe : usage: search_sources.py [-h] -q QUERY [--limit LIMIT] [--min-stars MIN_STARS]
+所在位置 行:466 字符: 1
++ & $py $s 2>&1 | Out-File -Append -Encoding utf8 $o
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (usage: search_s...tars MIN_STARS]:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                         [--sort SORT] [--json]
+                         {github,arxiv,both}
+search_sources.py: error: the following arguments are required: source, -q/--query
+exit=2

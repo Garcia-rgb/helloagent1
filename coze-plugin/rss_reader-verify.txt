@@ -1,0 +1,154 @@
+﻿======================================================================
+逐个源实测
+======================================================================
+
+### 36氪  https://www.36kr.com/feed
+    [logger] 解析到 3 条，来源：36氪
+    count=3  message=ok
+    - 圆桌：先进制造：给世界工厂装一颗AI大脑 | 36氪 2026产业未来大会
+      https://36kr.com/p/3986931112836096?f=rss
+      2026-09-17 11:17:07  +0800
+    - 圆桌：半导体：国产替代之后，下一步是什么｜36氪2026产业未来大会
+      https://36kr.com/p/3986926026898433?f=rss
+      2026-09-17 11:11:10  +0800
+    - 融资火爆、仿真鸿沟、数据缺口：一份2026年具身智能产业体检报告
+      https://36kr.com/p/3986852938283785?f=rss
+      2026-09-17 10:17:40  +0800
+
+### 虎嗅  https://rss.huxiu.com/
+    [logger] 解析到 3 条，来源：虎嗅
+    count=3  message=ok
+    - 在线酒店预订的“全网最低价”，死了吗？
+      https://www.huxiu.com/article/4891940.html?f=rss
+      Thu, 17 Sep 2026 13:13:25 +0800
+    - 未完的归途：“梅姨案”中的孩子们今何在？
+      https://www.huxiu.com/article/4891938.html?f=rss
+      Thu, 17 Sep 2026 12:57:45 +0800
+    - 泸州东站改名吵上热搜？“高铁站刺客”我忍你很久了
+      https://www.huxiu.com/article/4891937.html?f=rss
+      Thu, 17 Sep 2026 12:47:11 +0800
+
+### IT之家  https://www.ithome.com/rss/
+    [logger] 解析到 3 条，来源：IT之家
+    count=3  message=ok
+    - 字节火山引擎发布豆包座舱助手：联动 App 实现“手车互联”，上汽荣威家越 07 首
+      https://www.ithome.com/1/003/565.htm
+      Thu, 17 Sep 2026 05:36:19 GMT
+    - 全新奥迪 S5 Avant 车型 9 月 20 日上市：首发版限量 99 台，韩寒完
+      https://www.ithome.com/1/003/564.htm
+      Thu, 17 Sep 2026 05:35:20 GMT
+    - 微星 MEG X 电竞显示器上架：AI 加持第五代 QD-OLED 面板，9599 
+      https://www.ithome.com/1/003/563.htm
+      Thu, 17 Sep 2026 05:34:58 GMT
+
+### InfoQ AI频道  https://feed.infoq.com/ai-ml-data-eng/
+    [logger] 解析到 3 条，来源：InfoQ - AI, ML & Data Engineering
+    count=3  message=ok
+    - GPT-6 Astra Is the First Model OpenAI Clas
+      https://www.infoq.com/news/2026/09/gpt-6-astra-critical-cyber/?utm_campaign=infoq_conten
+      Thu, 17 Sep 2026 04:59:00 GMT
+    - Dropbox Evolves Riviera Content Processing
+      https://www.infoq.com/news/2026/09/dropbox-riviera-ai-platform/?utm_campaign=infoq_conte
+      Wed, 16 Sep 2026 14:42:00 GMT
+    - Article: Your Next DSL Author Is a Languag
+      https://www.infoq.com/articles/next-dsl-author-language-model/?utm_campaign=infoq_conten
+      Wed, 16 Sep 2026 11:00:00 GMT
+
+### 阮一峰博客(Atom)  https://www.ruanyifeng.com/blog/atom.xml
+    [logger] 解析到 3 条，来源：阮一峰的网络日志
+    count=3  message=ok
+    - 科技爱好者周刊（第 412 期）：禁止 issue，只用 PR
+      http://www.ruanyifeng.com/blog/2026/09/weekly-issue-412.html
+      2026-09-11T00:11:50Z
+    - 科技爱好者周刊（第 411 期）：OpenClaw 2.0 是一个缩影
+      http://www.ruanyifeng.com/blog/2026/09/weekly-issue-411.html
+      2026-09-03T23:59:05Z
+    - 科技爱好者周刊（第 410 期）：你需要知道的 AI 三种机制
+      http://www.ruanyifeng.com/blog/2026/08/weekly-issue-410.html
+      2026-08-27T23:56:43Z
+
+### arXiv cs.AI  http://export.arxiv.org/rss/cs.AI
+    [logger] 解析到 3 条，来源：cs.AI updates on arXiv.org
+    count=3  message=ok
+    - Making AI-Assisted Claims Independently Ch
+      https://arxiv.org/abs/2609.17631
+      Thu, 17 Sep 2026 00:00:00 -0400
+    - EvolveTrade: Experience-Driven Policy Refi
+      https://arxiv.org/abs/2609.17632
+      Thu, 17 Sep 2026 00:00:00 -0400
+    - One Color Preprocessing Improves DSATUR
+      https://arxiv.org/abs/2609.17633
+      Thu, 17 Sep 2026 00:00:00 -0400
+
+### 少数派  https://sspai.com/feed
+    [logger] 解析到 3 条，来源：少数派
+    count=3  message=ok
+    - 一个小创意的诞生：BeatBox 雪漫天外壳定制指南
+      https://sspai.com/post/114451
+      Thu, 17 Sep 2026 11:11:01 +0800
+    - 派早报：佳能发布 EOS R8 Mark II、GPT-5.5 即将下线等
+      https://sspai.com/post/114658
+      Thu, 17 Sep 2026 08:25:30 +0800
+    - 探秘柬埔寨，千年吴哥窟
+      https://sspai.com/post/114454
+      Wed, 16 Sep 2026 17:33:41 +0800
+
+### 量子位  https://www.qbitai.com/feed
+    [logger] 解析到 3 条，来源：量子位
+    count=3  message=ok
+    - 首购积分加赠70%：SkyProduction天工工作台联合火山引擎推出中秋国庆三重
+      https://www.qbitai.com/2026/09/491147.html
+      Thu, 17 Sep 2026 03:39:43 +0000
+    - 国产RSI模型交卷！Flash模型靠它反打旗舰
+      https://www.qbitai.com/2026/09/491091.html
+      Thu, 17 Sep 2026 03:26:21 +0000
+    - 比亚迪李云飞：中国汽车首登世界第一，这份荣耀属于所有中国汽车品牌
+      https://www.qbitai.com/2026/09/491062.html
+      Thu, 17 Sep 2026 02:01:15 +0000
+
+### Solidot  https://www.solidot.org/index.rss
+    [logger] 解析到 3 条，来源：奇客Solidot–传递最新科技情报
+    count=3  message=ok
+    - 付费给大学生睡足七小时提高了他们的学习成绩
+      https://www.solidot.org/story?sid=85400
+      Thu, 17 Sep 2026 00:09:54 +0800
+    - PS2 Fat 使用的安全芯片在时隔 26 年被破解
+      https://www.solidot.org/story?sid=85399
+      Wed, 16 Sep 2026 23:54:21 +0800
+    - Denuvo 起诉黑客违反 DMCA 反规避条款
+      https://www.solidot.org/story?sid=85398
+      Wed, 16 Sep 2026 23:27:44 +0800
+
+### GitHub releases(Atom)  https://github.com/langchain-ai/langchain/releases.atom
+    [logger] 解析到 3 条，来源：Release notes from langchain
+    count=3  message=ok
+    - langchain==1.4.1
+      https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1
+      2026-09-16T17:07:04Z
+    - langchain-core==1.6.3
+      https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.3
+      2026-09-11T17:38:04Z
+    - langchain-anthropic==1.7.2
+      https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.2
+      2026-09-10T19:13:12Z
+
+======================================================================
+边界用例
+======================================================================
+
+[空地址]
+    {'items': [], 'count': 0, 'summary': '', 'message': 'rss_url 不能为空'}
+
+[不存在的域名]
+    [logger] fetch failed: URLError <urlopen error Tunnel connection failed: 502 Bad Gateway> <- https://this-host-does-not-exist-abc123.com/feed
+    {'items': [], 'count': 0, 'summary': '', 'message': '抓取失败：URLError <urlopen error Tunnel connection failed: 502 Bad Gateway>（https://this-host-does-not-exist-abc123.com/feed）'}
+
+[不是 XML 的页面]
+    [logger] not a feed: https://www.baidu.com
+    {'items': [], 'count': 0, 'summary': '', 'message': '该地址返回的不是 RSS/Atom（可能被反爬拦截，或它根本不是订阅源）：https://www.baidu.com'}
+
+[limit 不传 -> 默认 5]
+    [logger] 解析到 3 条，来源：IT之家
+    count = 3
+
+汇总：成功 10 个源，失败 0 个源

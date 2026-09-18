@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "rss-daily-brief",
+  "version": "1.0.0",
+  "description": "读取 RSS / Atom 订阅源并生成每日资讯简报：抓回 36氪、虎嗅、IT之家、InfoQ、arXiv、GitHub 等源的最新文章，按标题、链接、时间汇总成可读文本。",
+  "author": {
+    "name": "Zhou Wei"
+  },
+  "license": "MIT",
+  "keywords": [
+    "rss",
+    "atom",
+    "news",
+    "briefing",
+    "资讯",
+    "简报"
+  ]
+}
